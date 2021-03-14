@@ -1,0 +1,46 @@
+// Colors
+
+@mixin grad-primary {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+@mixin grad-secondary {
+    background: #1a1818;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c151f, #1a1818);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #16091d, #181818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// Media Queries
+
+@mixin respond ( $breakpoint ){
+    
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em){     // 600px 
+            @content;
+        }
+    }    
+    
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em){      // 900px
+            @content;
+        }
+    }    
+    
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em){       // 1200px
+            @content;
+        }
+    }    
+
+    @if $breakpoint == big-desk {
+        @media (min-width: 112.5em){    // 1800px
+            @content;
+        }
+    }    
+
+}
+
+

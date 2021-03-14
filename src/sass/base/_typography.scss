@@ -1,0 +1,21 @@
+
+.heading{
+    &__primary{
+        font-size: 3.2rem;
+        color: $color-white;
+        opacity: .95;
+        font-weight: 200;
+        text-transform: uppercase;
+        font-family: 'McLaren';
+        margin-bottom: .75rem;
+    }
+
+    &__secondary{
+        color: $color-light;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: .15rem;
+        opacity: .8;
+        margin-bottom: .35rem;
+    }
+}

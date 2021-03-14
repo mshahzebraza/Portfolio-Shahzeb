@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-shahzeb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node-sass main.scss style.css",
+    "watch": "npm run compile && node-sass main.scss style.css -w",
+    "compile-folder": "node-sass src/sass -o dist/css",
+    "watch-folder": "npm run compile-folder && node-sass src/sass -o dist/css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  }
+}
