@@ -140,15 +140,16 @@ ul {
   .btn + .btn {
     margin-left: 1.5rem; }
 
-.section:nth-child(odd) {
-  background: #8E2DE2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right top, #4A00E0, #8E2DE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-bottom: 10%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60vh); }
+.section {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60vh);
+  padding-bottom: 10%; }
+  .section:nth-child(odd) {
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right top, #4A00E0, #8E2DE2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   @media (max-width: 56.25em) {
-    .section:nth-child(odd) {
+    .section {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 52vh); } }

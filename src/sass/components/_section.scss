@@ -1,9 +1,13 @@
-.section:nth-child(odd){
-    @include grad-primary;
-    padding-bottom: 10%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60vh );
+.section{
 
+    &:nth-child(odd){
+        @include grad-primary;
+    }
+    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60vh );
+    padding-bottom: 10%;
     @include respond (tab-port) {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 52vh );
     }
+
 }
