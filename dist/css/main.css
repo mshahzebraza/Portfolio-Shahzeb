@@ -1,20 +1,27 @@
 /* COLORS */
 .heading__primary {
   font-size: 3.2rem;
+  line-height: 1.4;
   color: rgba(255, 255, 255, 0.9);
   opacity: .95;
   font-weight: 200;
   text-transform: uppercase;
-  font-family: 'McLaren';
-  margin-bottom: .75rem; }
+  font-family: 'McLaren'; }
+  .heading__primary--dark {
+    color: black; }
 
 .heading__secondary {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: .15rem;
-  opacity: .8;
-  margin-bottom: .35rem; }
+  opacity: .8; }
+  .heading__secondary--dark {
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 500; }
+
+.center-text {
+  text-align: center; }
 
 * {
   margin: 0;
@@ -61,13 +68,16 @@ ul {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 75vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  transform: skewY(3.8deg); }
+  .header > * {
+    transform: skewY(-3.8deg); }
   @media (max-width: 56.25em) {
     .header {
       min-height: 65vh; } }
   .header__nav {
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.6); }
-  .header__navbar {
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.7); }
+  .header__nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +91,7 @@ ul {
   .header__list {
     display: flex; }
   .header__item + .header__item {
-    margin-left: 1.25em; }
+    margin-left: 1.4rem; }
   .header__link {
     font-size: 1.4rem;
     font-weight: 500; }
@@ -93,7 +103,7 @@ ul {
     @media (max-width: 75em) {
       .header__hero {
         padding-top: 2rem; } }
-  .header__hero-case {
+  .header__hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,15 +151,74 @@ ul {
     margin-left: 1.5rem; }
 
 .section {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60vh);
-  padding-bottom: 10%; }
-  .section:nth-child(odd) {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right top, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  @media (max-width: 56.25em) {
-    .section {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 52vh); } }
+  border: 2px solid red;
+  padding-bottom: 12rem;
+  padding-top: 10rem; }
+  .section__title {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin-bottom: 6rem; }
+    .section__title .heading__secondary {
+      font-size: 1.8rem; }
+    .section__title::before {
+      content: "";
+      position: absolute;
+      bottom: -1.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8rem;
+      height: .2rem;
+      background: rgba(255, 255, 255, 0.6); }
+    .section__title--dark::before {
+      background: rgba(0, 0, 0, 0.6); }
+  .section__copy {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+    word-spacing: 0.25rem;
+    max-width: 70rem;
+    padding: 0 2rem;
+    text-align: justify;
+    margin: auto;
+    position: relative; }
+    .section__copy::before, .section__copy::after {
+      position: absolute;
+      font-size: 2.5em;
+      font-family: "Lato";
+      color: rgba(255, 255, 255, 0.75); }
+    .section__copy::before {
+      content: "\201C";
+      top: -3rem;
+      left: 0.25rem; }
+    .section__copy::after {
+      content: "\201D";
+      bottom: -3.5rem;
+      right: 0.25rem; }
+    .section__copy--dark {
+      color: black; }
+      .section__copy--dark::before, .section__copy--dark::after {
+        color: rgba(0, 0, 0, 0.75); }
+  .section__header {
+    margin-top: -6rem;
+    padding-top: 6rem; }
+  .section__about {
+    transform: skewY(3.8deg); }
+    .section__about > * {
+      transform: skewY(-3.8deg); }
+  .section__skills {
+    transform: skewY(3.8deg); }
+    .section__skills > * {
+      transform: skewY(-3.8deg); }
+
+.section {
+  background: #8E2DE2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right top, #4A00E0, #8E2DE2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.main .section:nth-child(odd) {
+  background: none; }

@@ -1,0 +1,11 @@
+.section{
+    // &:nth-child(odd){
+    @include grad-primary;
+    // }    
+}
+
+.main{
+    .section:nth-child(odd){
+        background: none;
+    }
+}

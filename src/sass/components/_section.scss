@@ -1,13 +1,92 @@
 .section{
+    border: 2px solid red;
+    padding-bottom: 12rem;
+    padding-top: 10rem;
 
-    &:nth-child(odd){
-        @include grad-primary;
+    &__title{
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        margin-bottom: 6rem;
+
+        .heading__secondary{
+            font-size: 1.8rem;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8rem;
+            height: .2rem;
+            background: rgba($color: $color-light, $alpha: 0.6);
+        }
+
+        
+        &--dark{
+            &::before{
+                background: rgba($color: $color-dark, $alpha: 0.6);
+            }
+        }
+        
     }
-    
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60vh );
-    padding-bottom: 10%;
-    @include respond (tab-port) {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 52vh );
+
+    &__copy{
+        color: $color-white;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        letter-spacing: .1rem;
+        word-spacing: 0.25rem;
+        max-width: 70rem;
+        padding: 0 2rem;
+        text-align: justify;
+        margin: auto;
+        position: relative;
+
+        &::before,
+        &::after{
+            position: absolute;
+            font-size: 2.5em;
+            font-family: "Lato";
+            color: rgba($color: $color-light, $alpha: 0.75);
+        }
+
+        &::before{
+            content: "\201C";
+            top: -3rem;
+            left: 0.25rem;
+        }
+        &::after{
+            content: "\201D";
+            bottom: -3.5rem;
+            right: 0.25rem;
+
+        }
+        
+        &--dark{
+            color: $color-black;
+
+            &::before,
+            &::after{
+                color: rgba($color: $color-dark, $alpha: 0.75);
+            }
+        }
+        
+    }
+
+    &__header{
+        margin-top:-6rem;
+        padding-top:6rem;
+    }
+
+    &__about{
+        @include skew-section(3.8deg);
+    }
+
+    &__skills{
+        @include skew-section(3.8deg);
     }
 
 }
