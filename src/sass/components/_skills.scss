@@ -1,0 +1,59 @@
+.skills{
+    
+    .heading{
+        margin-bottom: 8rem;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100rem;
+        margin: auto;
+        // background: red;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+    &__item{
+        margin: 2rem;
+        // &+&{
+            // margin-left: 3rem;
+        // }
+    }
+    &__figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon{
+        margin-bottom: 1.5em;
+        height: 10rem;
+        width: 10rem;
+        border: 1px solid crimson;
+        object-fit: cover;
+        overflow: hidden;
+        
+        &[alt="Html Skill"]{
+            border: 2px solid white;
+        }
+        &[alt="Css Skill"]{
+            border: 2px solid white;
+        }
+        &[alt="Elementor Skill"]{
+            border: 2px solid white;
+        }
+        &[alt="JavaScript Skill"]{
+            border: 2px solid white;
+        }
+        &[alt="WordPress Skill"]{
+            border: 2px solid white;
+        }
+    }
+    &__label{
+        font-family: raleway;
+        font-size: 1.4em;
+        font-weight: 500;
+        color: $color-white;
+        letter-spacing: .1em;
+    }
+}

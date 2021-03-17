@@ -212,6 +212,52 @@ ul {
     .section__skills > * {
       transform: skewY(-3.8deg); }
 
+.skills .heading {
+  margin-bottom: 8rem; }
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+  align-items: flex-end;
+  justify-content: space-evenly; }
+
+.skills__item {
+  margin: 2rem; }
+
+.skills__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.skills__icon {
+  margin-bottom: 1.5em;
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid crimson;
+  object-fit: cover;
+  overflow: hidden; }
+  .skills__icon[alt="Html Skill"] {
+    border: 2px solid white; }
+  .skills__icon[alt="Css Skill"] {
+    border: 2px solid white; }
+  .skills__icon[alt="Elementor Skill"] {
+    border: 2px solid white; }
+  .skills__icon[alt="JavaScript Skill"] {
+    border: 2px solid white; }
+  .skills__icon[alt="WordPress Skill"] {
+    border: 2px solid white; }
+
+.skills__label {
+  font-family: raleway;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: .1em; }
+
 .section {
   background: #8E2DE2;
   /* fallback for old browsers */
