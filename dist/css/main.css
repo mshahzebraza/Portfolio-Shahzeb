@@ -79,6 +79,7 @@ ul {
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.7); }
   .header__nav-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
@@ -89,7 +90,8 @@ ul {
     font-size: 2.4rem;
     font-weight: 600; }
   .header__list {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
   .header__item + .header__item {
     margin-left: 1.4rem; }
   .header__link {
@@ -225,7 +227,10 @@ ul {
   justify-content: space-evenly; }
 
 .skills__item {
-  margin: 2rem; }
+  margin: 1.5vw; }
+  @media (max-width: 25em) {
+    .skills__item {
+      margin: 4vw 3.5vw; } }
 
 .skills__figure {
   display: flex;
@@ -234,26 +239,23 @@ ul {
   justify-content: space-between; }
 
 .skills__icon {
-  margin-bottom: 1.5em;
-  height: 10rem;
-  width: 10rem;
-  border: 1px solid crimson;
+  margin-bottom: 2rem;
+  height: 7.5vw;
+  width: 7.5vw;
   object-fit: cover;
   overflow: hidden; }
-  .skills__icon[alt="Html Skill"] {
-    border: 2px solid white; }
-  .skills__icon[alt="Css Skill"] {
-    border: 2px solid white; }
-  .skills__icon[alt="Elementor Skill"] {
-    border: 2px solid white; }
-  .skills__icon[alt="JavaScript Skill"] {
-    border: 2px solid white; }
-  .skills__icon[alt="WordPress Skill"] {
-    border: 2px solid white; }
+  @media (max-width: 37.5em) {
+    .skills__icon {
+      height: 10vw;
+      width: 10vw; } }
+  @media (max-width: 25em) {
+    .skills__icon {
+      height: 15vw;
+      width: 15vw; } }
 
 .skills__label {
   font-family: raleway;
-  font-size: 1.4em;
+  font-size: 2rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: .1em; }

@@ -23,6 +23,7 @@
         &__nav-container{
             // container class
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 1.5rem 0;
@@ -38,6 +39,7 @@
             &__menu{}
             &__list{
                 display: flex;
+                flex-wrap: wrap;
             }
                 &__item{
                     &+&{

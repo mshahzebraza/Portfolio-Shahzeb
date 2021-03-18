@@ -14,7 +14,11 @@
         justify-content: space-evenly;
     }
     &__item{
-        margin: 2rem;
+        // margin: 1.4rem;
+        margin: 1.5vw;
+        @include respond (25em) {
+            margin: 4vw 3.5vw;
+        }
         // &+&{
             // margin-left: 3rem;
         // }
@@ -26,32 +30,29 @@
         justify-content: space-between;
     }
     &__icon{
-        margin-bottom: 1.5em;
-        height: 10rem;
-        width: 10rem;
-        border: 1px solid crimson;
+        margin-bottom: 2rem;
+        // height: 10rem;
+        // width: 10rem;
+        height: 7.5vw;
+        width: 7.5vw;
+        // border: 1px solid crimson;
         object-fit: cover;
         overflow: hidden;
+
+        @include respond(phone) {
+            height: 10vw;
+            width: 10vw;
+        }
+
+        @include respond(25em) {
+            height: 15vw;
+            width: 15vw;
+        }
         
-        &[alt="Html Skill"]{
-            border: 2px solid white;
-        }
-        &[alt="Css Skill"]{
-            border: 2px solid white;
-        }
-        &[alt="Elementor Skill"]{
-            border: 2px solid white;
-        }
-        &[alt="JavaScript Skill"]{
-            border: 2px solid white;
-        }
-        &[alt="WordPress Skill"]{
-            border: 2px solid white;
-        }
     }
     &__label{
         font-family: raleway;
-        font-size: 1.4em;
+        font-size: 2rem;
         font-weight: 500;
         color: $color-white;
         letter-spacing: .1em;
