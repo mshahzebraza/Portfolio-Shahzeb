@@ -122,22 +122,154 @@
                     <h2 class="heading__secondary heading__secondary--dark">My Skill Set</h2>
                     <h1 class="heading__primary heading__primary--dark">What I Know</h1>
                 </div>
-                <div class="heading">
+                <div class="heading-secondary">
                     <h2 class="heading__secondary heading__secondary--dark">HTML / CSS</h2>
                     <!-- <h1 class="heading__primary heading__primary--dark">What I Know</h1> -->
                 </div>
-                <div class="projects__showcase ">
+                <div class="projects__showcase">
                     <figure class="projects__figure">
-                        <!-- <img class="projects__icon" src="./src/img/node-sass.svg" alt="HTML Logo"> -->
+                        <img class="projects__image" src="./src/img/project_1.jpg" alt="HTML Logo">
                         <figcaption class="projects__label">Omnifood Restaurant</figcaption>
                     </figure>
-
-                    <!-- --------------------------------------- -->
-                    <!-- --------------------------------------- -->
-                    <!-- USE GRID LAYOUT FOR THE PROJECT GALLERY -->
-                    <!-- --------------------------------------- -->
-                    <!-- --------------------------------------- -->
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_2.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_3.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_4.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
                 </div>
+                <div class="heading-secondary">
+                    <h2 class="heading__secondary heading__secondary--dark">Frontend Development</h2>
+                    <!-- <h1 class="heading__primary heading__primary--dark">What I Know</h1> -->
+                </div>
+                <div class="projects__showcase">
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_5.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_6.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_7.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
+                    <figure class="projects__figure">
+                        <img class="projects__image" src="./src/img/project_8.jpg" alt="HTML Logo">
+                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section__online-presence online-presence">
+            <div class="container ">
+                <div class="section__title heading">
+                    <h2 class="heading__secondary">Also Check me out here</h2>
+                    <h1 class="heading__primary">Online Presence</h1>
+                </div>
+                <ul class="online-presence__list ">
+                    <li class="online-presence__item">
+                        <figure class="online-presence__figure">
+                            <img class="online-presence__icon" src="./src/img/online-presence_1.png" alt="HTML Logo">
+                            <figcaption class="online-presence__label">LinkedIn</figcaption>
+                        </figure>
+                    </li>
+                    <li class="online-presence__item">
+                        <figure class="online-presence__figure">
+                            <img class="online-presence__icon" src="./src/img/online-presence_2.png" alt="CSS Logo">
+                            <figcaption class="online-presence__label">FreeCodeCamp</figcaption>
+                        </figure>
+                    </li>
+                    <li class="online-presence__item">
+                        <figure class="online-presence__figure">
+                            <img class="online-presence__icon" src="./src/img/online-presence_3.png" alt="Sass Logo">
+                            <figcaption class="online-presence__label">Github</figcaption>
+                        </figure>
+                    </li>
+                    <li class="online-presence__item">
+                        <figure class="online-presence__figure">
+                            <img class="online-presence__icon" src="./src/img/online-presence_4.png" alt="JavaScript Logo">
+                            <figcaption class="online-presence__label">Stack Overflow</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section section__contact contact">
+            <div class="container">
+
+                <div class="section__title section__title--dark heading">
+                    <h2 class="heading__secondary heading__secondary--dark">Also Check me out here</h2>
+                    <h1 class="heading__primary heading__primary--dark">Online Presence</h1>
+                </div>
+
+                <div class="contact__container">
+
+                    <div class="contact__graphic">
+                        <img src="./src/img/contact_image.jpg" alt="Office Image" class="contact__image">
+                    </div>
+
+                    <form action="submit" class="contact__form">
+
+                        <div class="contact__form-group">
+                            <input 
+                            type="text" 
+                            id="name" 
+                            class="contact__form-field"
+                            minlength="3" 
+                            placeholder="Full Name" 
+                            required>
+                            <label for="name" class="contact__form-label">Full Name</label>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <input 
+                            type="email" 
+                            id="email" 
+                            class="contact__form-field" 
+                            list="Shahzeb@gmail.com, raza@hotmail.com" 
+                            placeholder="Email" 
+                            required>
+                            <label for="email" class="contact__form-label">Email</label>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <input 
+                            type="tel" 
+                            id="contact" 
+                            class="contact__form-field" 
+                            placeholder="Contact" 
+                            title="+92-312-3456789" 
+                            required>
+                            <label for="contact" class="contact__form-label">Contact</label>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <textarea 
+                            type="text" 
+                            id="message" 
+                            class="contact__form-field" 
+                            placeholder="Message"></textarea>
+                            <label for="message" class="contact__form-label">Message</label>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <button class="btn btn--dark btn--ghost">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                
             </div>
         </section>
 

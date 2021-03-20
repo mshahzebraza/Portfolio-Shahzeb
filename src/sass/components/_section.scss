@@ -90,4 +90,14 @@
         
     }
 
+    &__online-presence{
+        @include skew-section(3.8deg);
+        
+    }
+
+    &__contact{
+        @include skew-section(3.8deg);
+        
+    }
+
 }

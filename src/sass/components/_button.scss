@@ -1,7 +1,7 @@
 .btn{
     border: none;
     background: $color-white;
-    padding: 1rem 1.75rem;
+    padding: 1.25rem 1.75rem;
     font-family: inherit;
     text-transform: uppercase;
     font-weight: 700;
@@ -9,11 +9,27 @@
     letter-spacing: .06rem;
     border-radius: .2rem;
     cursor: pointer;
-    transition: all .1s ease;
+    transition: all 0.25s ease;
 
     &:hover{
         transform: scale(0.975);
     }
+    &:focus{
+        outline: none;
+        background: white;
+        transform: scale(0.975);
+    }
+    
+    &--dark{
+        background: $color-black;
+        color: $color-white;
+
+        &:focus{
+            background: black;
+        }
+    }
+
+    
     &+&{
         margin-left: 1.5rem;
     }

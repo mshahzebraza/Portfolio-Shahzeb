@@ -1,0 +1,105 @@
+.contact{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+        &__graphic{
+            position: relative;
+            flex: 0 0 40%;
+            @include respond(phone) {
+                display: none;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                bottom: -2rem;
+                left: 2rem;
+                background: $color-black;
+            }
+        }
+            &__image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: none;
+
+            }
+        &__form{
+            flex: 0 0 #{"min(55%,50rem)"};
+            @include respond(phone) {
+                flex: 1;
+            }
+            // background-color: gold;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            &__form-group{
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+
+                &+&{
+                    margin-top: 3rem;
+                }
+                .btn{
+                    // background: red;
+                    align-self: flex-start;
+                }
+                
+            }
+                &__form-field{
+                    padding: .5rem 0;
+                    min-height: 3rem;
+                    border: 1.5px solid transparent;
+                    border-bottom-color: rgba($color: $color-dark, $alpha: 0.5);
+                    outline: none;
+
+                    &:user-invalid{
+                        color: red;
+                    }
+
+                    &::placeholder{
+                        transition: all .5s cubic-bezier(.02,.82,.61,1);
+                    }
+
+                    &:focus::placeholder{
+                        transform: translateY(-2rem);
+                        opacity: 0;
+                    }
+                    &:focus{
+                        border-bottom-color: blue;
+                    }
+
+                    &:hover::placeholder{
+                        color: blue;
+                    }
+                }
+
+                &__form-field:focus+&__form-label{
+                    opacity: 1;
+                    transform: translateY(0);
+                    letter-spacing: unset;
+                    word-spacing: unset;
+                }
+
+                &__form-label{
+                    opacity: 0;
+                    color: blue;
+                    transform: translateY(2rem);
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-left: .12rem;
+                    // text-transform: uppercase;
+                    letter-spacing: .075em;
+                    word-spacing: .2em;
+                    transition: all 0.5s cubic-bezier(.02,.82,.61,1);
+                    
+                    // color: transparent;
+                }
+}

@@ -1,0 +1,58 @@
+.projects{
+
+    // overflow: hidden;
+    .heading-secondary{
+        // margin-top: 2rem;
+        margin-bottom: 1.5rem;
+
+        &:not(:first-child){
+            margin-top: 3rem;
+        }
+        
+    }
+    &__showcase{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        // width: 100%;
+        // margin: 
+    }
+    &__figure{
+            // margin-top: 1rem;
+
+            // $margin-size: #{"min(3vw,2.5rem)"};
+            // margin-left: $margin-size;
+            // margin-top: $margin-size;
+            // border: 1px solid blue;
+
+            // overflow: hidden;
+            text-align: center;
+            margin-bottom: 2rem;
+            }
+
+            &__image{
+                
+                $size-image: 15vw;
+                // @include respond(tab-land) {
+                //     $size-image: 20vw;
+                // }
+                // width: $size-image;
+                // height: $size-image;
+                width: #{"clamp(15rem,20vw,25rem)"};
+                height: #{"clamp(15rem,20vw,25rem)"};
+                object-fit: cover;
+                
+                // width: 100%;
+                // height: auto;
+                // margin: 0 auto;
+                margin-bottom: 5%;
+                // object-fit: cover;
+                // overflow: hidden;`
+            }
+            &__label{
+                font-size: #{"clamp(1.2rem,2vw,1.75rem)"};
+                // word-break: break-all;
+                // display: none;
+            }
+}

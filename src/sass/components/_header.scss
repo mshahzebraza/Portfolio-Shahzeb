@@ -49,7 +49,14 @@
                     &__link{
                         font-size: 1.4rem;
                         font-weight: 500;
-                        
+                        outline: none;
+                        transition: all .5s ease;
+                        // transform: scale(.2);
+                        &:focus{
+                            // color: red;
+                            font-weight: 700;
+                            color: $color-dark;
+                        }
                     }
 
     
