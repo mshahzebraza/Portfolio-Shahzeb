@@ -1,11 +1,12 @@
 .btn{
     border: none;
     background: $color-white;
-    padding: 1.25rem 1.75rem;
+    // padding: 1.25rem 1.75rem;
+    padding: .75em 1.15em;
     font-family: inherit;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: #{"clamp(1.3rem,1vw,1.4rem)"} ;
     letter-spacing: .06rem;
     border-radius: .2rem;
     cursor: pointer;
@@ -29,8 +30,12 @@
         }
     }
 
-    
-    &+&{
-        margin-left: 1.5rem;
+    // IMPORTANT LINK: https://alistapart.com/article/quantity-queries-for-css/
+    &:nth-last-child(n+2):first-child,  // Styling for first element if {2} or more elements are present
+    // &:nth-last-child(n+2):first-child~& // Styling for next siblings of first element if {2} or more elements are present
+    &:nth-last-child(n+2):first-child~&:not(:last-child) // Alternate for previous CSS Rule.. This one is used if we don't want the styles to be applied on last element
+    {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }

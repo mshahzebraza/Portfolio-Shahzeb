@@ -1,0 +1,57 @@
+.footer{
+    padding: 3rem 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        &__meta{
+            color: $color-white;
+            font-size: #{"clamp(1.2rem,2vw,1.6rem)"};
+            letter-spacing: .1em;
+            font-weight: 300;
+            text-transform: uppercase;
+            span{
+                font-weight: 800;
+            }
+        }
+        &__nav{
+            display: flex;
+            align-items: center;
+        }
+            &__nav-item{
+                width: #{"clamp(2rem,4vw,3rem)"};
+                position: relative;
+                display: flex;
+                align-items: center;
+                &+&{
+                    margin-left: #{"min(2.5rem,3vw)"};
+                }
+
+                
+            }
+                &__nav-link{
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    z-index: 2;
+
+                    &:focus+*,&:hover+*{
+                        transform: translateY(-6px) scale(1.05) ;
+                        // top: -10px;
+                        // outline: 1px solid red;
+                    }
+
+                    
+                    // background: black;
+                }
+                &__nav-img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all .25s ease-out;
+                    // position: relative;
+                }
+    }

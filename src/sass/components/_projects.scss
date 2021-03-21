@@ -15,6 +15,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        gap: 1rem;
         // width: 100%;
         // margin: 
     }
@@ -39,16 +40,18 @@
                 // }
                 // width: $size-image;
                 // height: $size-image;
-                width: #{"clamp(15rem,20vw,25rem)"};
-                height: #{"clamp(15rem,20vw,25rem)"};
+                width: #{"clamp(12rem,20vw,27.5rem)"};
+                height: #{"clamp(12rem,20vw,27.5rem)"};
                 object-fit: cover;
-                
-                // width: 100%;
-                // height: auto;
-                // margin: 0 auto;
                 margin-bottom: 5%;
-                // object-fit: cover;
-                // overflow: hidden;`
+                @include respond(375px){
+                    width: #{"clamp(12rem,43vw,25rem)"};
+                    height: #{"clamp(12rem,43vw,25rem)"};
+                }
+                @include respond(180px){
+                    width: #{"max(8rem,90vw,20rem)"};
+                    height: #{"max(8rem,90vw,20rem)"};
+                }
             }
             &__label{
                 font-size: #{"clamp(1.2rem,2vw,1.75rem)"};

@@ -89,7 +89,9 @@
                 flex: 0 0 45%;
                 // height: 100%;
             }
-                &__hero-text{}
+                &__hero-text{
+                    margin-bottom: 1rem;
+                }
                 &__hero-cta{}
 
             &__hero-graphic{
