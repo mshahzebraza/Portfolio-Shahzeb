@@ -28,7 +28,6 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Raleway", "Lato", "Mclaren", sans-serif;
-
 }
 
 .container{
@@ -51,4 +50,33 @@ ul{
     list-style: none;
     // display: inline-block;
     // display: flex;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: rgba($color: rgb(34, 2, 49), $alpha: 1);
+    // background: transparent;
+    // border: 5px solid white;
+    // padding: .5em;
+}
+
+body::-webkit-scrollbar-track {
+    // background: transparent;
+    // box-shadow: inset 5px 0 6px rgba(0, 0, 0,0.25);
+    // background-color: rgba($color: #ca2727, $alpha: .8);
+    // opacity: 0.1;
+    // border: 5px solid red;
+    // outline: 5px solid red;
+    // padding: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: rgb(31, 116, 200);
+    background: white;
+    box-shadow: inset 2px 0 10px rgba(0, 0, 0, 0.389);
+    opacity: 0.1;
+    border-radius: 10rem;
+    
+    // background-color: transparent;
 }

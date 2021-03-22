@@ -17,6 +17,9 @@
     }
     &:focus{
         outline: none;
+        box-shadow: 0 0 10px rgba($color: #2d7ae5, $alpha: 0.8), 
+        0 10px 20px rgba($color: #2d7ae5, $alpha: 0.8),
+         0 20px 30px rgba($color: #2d7ae5, $alpha: 0.8);
         background: white;
         transform: scale(0.975);
     }

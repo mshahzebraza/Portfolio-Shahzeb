@@ -20,18 +20,36 @@
     <title>Portfolio | Shahzeb</title>
 </head>
 <body>
-    <header class="section section__header header">
-
+    <header id="section-header" class="section section__header header">
         <nav class="header__nav">
             <div class="container header__nav-container">
                 <div class="header__logo">M Shahzeb Raza</div>
-                <div class="header__menu"></div>
+                <!-- <div class="header__menu" data-toggle="toggle"></div> -->
+                <label for="menu-checkbox" class="header__menu-label-wrapper">
+                    <a href="#" class="header__menu-icon">
+                        <span class="header__menu-icon-line"></span>
+                        <span class="header__menu-icon-line"></span>
+                        <span class="header__menu-icon-line"></span>
+                    </a>                    
+                </label>
+                
+                <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="header__menu-checkbox">
+
+                
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="#section-header" class="header__menu-link">Home</a></li>
+                    <li class="header__menu-item"><a href="#section-about" class="header__menu-link">About</a></li>
+                    <li class="header__menu-item"><a href="#section-skills" class="header__menu-link">Services</a></li>
+                    <li class="header__menu-item"><a href="#section-projects" class="header__menu-link">Portfolio</a></li>
+                    <li class="header__menu-item"><a href="#section-contact" class="header__menu-link">Contact</a></li>
+                </ul>
+
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                    <li class="header__item"><a href="#" class="header__link">About</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Services</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Portfolio</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                    <li class="header__item"><a href="#section-header" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="#section-about" class="header__link">About</a></li>
+                    <li class="header__item"><a href="#section-skills" class="header__link">Services</a></li>
+                    <li class="header__item"><a href="#section-projects" class="header__link">Portfolio</a></li>
+                    <li class="header__item"><a href="#section-contact" class="header__link">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +81,7 @@
     </header>
 
     <main class="main">
-        <section class="section section__about about">
+        <section id="section-about" class="section section__about about">
             <div class="container ">
                 <div class="section__title section__title--dark heading">
                     <h2 class="heading__secondary heading__secondary--dark">Take some time to</h2>
@@ -75,7 +93,7 @@
             </div>
         </section>
 
-        <section class="section section__skills skills">
+        <section id="section-skills" class="section section__skills skills">
             <div class="container ">
                 <div class="section__title heading">
                     <h2 class="heading__secondary">My Skill Set</h2>
@@ -116,7 +134,7 @@
             </div>
         </section>
 
-        <section class="section section__projects projects">
+        <section id="section-projects" class="section section__projects projects">
             <div class="container ">
                 <div class="section__title section__title--dark heading">
                     <h2 class="heading__secondary heading__secondary--dark">My Skill Set</h2>
@@ -169,7 +187,7 @@
             </div>
         </section>
 
-        <section class="section section__online-presence online-presence">
+        <section id="section-online-presence" class="section section__online-presence online-presence">
             <div class="container ">
                 <div class="section__title heading">
                     <h2 class="heading__secondary">Also Check me out here</h2>
@@ -204,7 +222,7 @@
             </div>
         </section>
         
-        <section class="section section__contact contact">
+        <section id="section-contact" class="section section__contact contact">
             <div class="container">
 
                 <div class="section__title section__title--dark heading">
@@ -273,7 +291,7 @@
             </div>
         </section>
 
-        <footer class="section section__footer footer">
+        <footer id="section-footer" class="section section__footer footer">
             <div class="container">
                 <h1 class="footer__meta">Concept by <span>M Shahzeb Raza</span></h1>
                 <ul class="footer__nav">
