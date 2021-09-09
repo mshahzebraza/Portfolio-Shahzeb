@@ -1,323 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Icons -->
-    <script src="https://kit.fontawesome.com/16f9917f96.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/16f9917f96.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=McLaren&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=McLaren&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./dist/css/main.css">
-    
+    <link rel="stylesheet" href="./dist/css/main.css" />
+
     <title>Portfolio | Shahzeb</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="section-header" class="section section__header header">
-        <nav class="header__nav">
-            <div class="container header__nav-container">
-                <div class="header__logo">M Shahzeb Raza</div>
-                <!-- <div class="header__menu" data-toggle="toggle"></div> -->
-                <label for="menu-checkbox" class="header__menu-label-wrapper">
-                    <a href="#" class="header__menu-icon">
-                        <span class="header__menu-icon-line"></span>
-                        <span class="header__menu-icon-line"></span>
-                        <span class="header__menu-icon-line"></span>
-                    </a>                    
-                </label>
-                
-                <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="header__menu-checkbox">
+      <nav class="header__nav">
+        <div class="container header__nav-container">
+          <div class="header__logo">M Shahzeb Raza</div>
+          <!-- <div class="header__menu" data-toggle="toggle"></div> -->
+          <label for="menu-checkbox" class="header__menu-label-wrapper">
+            <a href="#" class="header__menu-icon">
+              <span class="header__menu-icon-line"></span>
+              <span class="header__menu-icon-line"></span>
+              <span class="header__menu-icon-line"></span>
+            </a>
+          </label>
 
-                
-                <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="#section-header" class="header__menu-link">Home</a></li>
-                    <li class="header__menu-item"><a href="#section-about" class="header__menu-link">About</a></li>
-                    <li class="header__menu-item"><a href="#section-skills" class="header__menu-link">Services</a></li>
-                    <li class="header__menu-item"><a href="#section-projects" class="header__menu-link">Portfolio</a></li>
-                    <li class="header__menu-item"><a href="#section-contact" class="header__menu-link">Contact</a></li>
-                </ul>
+          <input
+            type="checkbox"
+            name="menu-checkbox"
+            id="menu-checkbox"
+            class="header__menu-checkbox"
+          />
 
-                <ul class="header__list">
-                    <li class="header__item"><a href="#section-header" class="header__link">Home</a></li>
-                    <li class="header__item"><a href="#section-about" class="header__link">About</a></li>
-                    <li class="header__item"><a href="#section-skills" class="header__link">Services</a></li>
-                    <li class="header__item"><a href="#section-projects" class="header__link">Portfolio</a></li>
-                    <li class="header__item"><a href="#section-contact" class="header__link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <div class="header__hero">
-            <div class="header__hero-container container">
-                
-                <div class="header__hero-content">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#section-header" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#section-about" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#section-skills" class="header__menu-link">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#section-projects" class="header__menu-link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#section-contact" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
 
-                    <div class="header__hero-text heading">
-                        <h2 class="heading__secondary">I make websites that truly</h2>
-                        <h1 class="heading__primary">Grow your business</h1>
-                    </div>
-                    
-                    <div class="header__hero-cta">
-                        <button class="btn btn--fill">Order Now</button>
-                        <button class="btn btn--ghost">Portfolio</button>
-                    </div>
-    
-                </div>
-                
-                <div class="header__hero-graphic">
-                    <img src="./src/img/hero-img.png" alt="#" class="header__hero-image">
-                </div>
-
-            </div>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#section-header" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#section-about" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#section-skills" class="header__link">Services</a>
+            </li>
+            <li class="header__item">
+              <a href="#section-projects" class="header__link">Portfolio</a>
+            </li>
+            <li class="header__item">
+              <a href="#section-contact" class="header__link">Contact</a>
+            </li>
+          </ul>
         </div>
+      </nav>
 
+      <div class="header__hero">
+        <div class="header__hero-container container">
+          <div class="header__hero-content">
+            <div class="header__hero-text heading">
+              <h2 class="heading__secondary">I make websites that truly</h2>
+              <h1 class="heading__primary">Grow your business</h1>
+            </div>
+
+            <div class="header__hero-cta">
+              <button class="btn btn--fill">Order Now</button>
+              <button class="btn btn--ghost">Portfolio</button>
+            </div>
+          </div>
+
+          <div class="header__hero-graphic">
+            <img
+              src="./src/img/my_pic.jpg"
+              alt="#"
+              class="header__hero-image"
+            />
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="main">
-        <section id="section-about" class="section section__about about">
-            <div class="container ">
-                <div class="section__title section__title--dark heading">
-                    <h2 class="heading__secondary heading__secondary--dark">Take some time to</h2>
-                    <h1 class="heading__primary heading__primary--dark">Know each other</h1>
-                </div>
-                <p class="section__copy section__copy--dark">
-                    A Mechanical Engineer by profession and a curious mind to know how things work. My drive to learn new skills has led me to surf through the world of Graphic Design, Video Editing, Web Design and all the way to being a frontend developer. 
-                </p>
+      <section id="section-about" class="section section__about about">
+        <div class="container">
+          <div class="section__title section__title--dark heading">
+            <h2 class="heading__secondary heading__secondary--dark">
+              Take some time to
+            </h2>
+            <h1 class="heading__primary heading__primary--dark">
+              Know each other
+            </h1>
+          </div>
+          <p class="section__copy section__copy--dark">
+            A Mechanical Engineer by profession and a curious mind to know how
+            things work. My drive to learn new skills has led me to surf through
+            the world of Graphic Design, Video Editing, Web Design and all the
+            way to being a frontend developer.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-skills" class="section section__skills skills">
+        <div class="container">
+          <div class="section__title heading">
+            <h2 class="heading__secondary">My Skill Set</h2>
+            <h1 class="heading__primary">What I Know</h1>
+          </div>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <figure class="skills__figure">
+                <img
+                  class="skills__icon"
+                  src="./src/img/icons/HTML.png"
+                  alt="HTML Logo"
+                />
+                <figcaption class="skills__label">HTML 5</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__figure">
+                <img
+                  class="skills__icon"
+                  src="./src/img/icons/CSS.png"
+                  alt="CSS Logo"
+                />
+                <figcaption class="skills__label">CSS 3</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__figure">
+                <img
+                  class="skills__icon"
+                  src="./src/img/icons/Sass.png"
+                  alt="Sass Logo"
+                />
+                <figcaption class="skills__label">Sass</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__figure">
+                <img
+                  class="skills__icon"
+                  src="./src/img/icons/JS.png"
+                  alt="JavaScript Logo"
+                />
+                <figcaption class="skills__label">JavaScript</figcaption>
+              </figure>
+            </li>
+            <li class="skills__item">
+              <figure class="skills__figure">
+                <img
+                  class="skills__icon"
+                  src="./src/img/icons/React.png"
+                  alt="React Logo"
+                />
+                <figcaption class="skills__label">React</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section-projects" class="section section__projects projects">
+        <div class="container">
+          <div class="section__title section__title--dark heading">
+            <h2 class="heading__secondary heading__secondary--dark">
+              My Skill Set
+            </h2>
+            <h1 class="heading__primary heading__primary--dark">What I Know</h1>
+          </div>
+          <div class="heading-secondary">
+            <h2 class="heading__secondary heading__secondary--dark">
+              HTML / CSS
+            </h2>
+            <!-- <h1 class="heading__primary heading__primary--dark">What I Know</h1> -->
+          </div>
+          <div class="projects__showcase">
+            <a href="https://omnifood-website.vercel.app/" target="blank">
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_1.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">
+                  Omnifood Restaurant
+                </figcaption>
+              </figure>
+            </a>
+            <a href="https://natours-landing-page.vercel.app/" target="blank">
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_2.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">
+                  Natours Adventures
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              href="https://starry-web-tour-company-website.vercel.app/"
+              target="blank"
+            >
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_3.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">Star Web</figcaption>
+              </figure>
+            </a>
+            <a
+              href="https://hubble-landing-alternating-features.vercel.app/"
+              target="blank"
+            >
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_4.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">Hubble Landing</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="heading-secondary">
+            <h2 class="heading__secondary heading__secondary--dark">
+              Frontend Development
+            </h2>
+            <!-- <h1 class="heading__primary heading__primary--dark">What I Know</h1> -->
+          </div>
+          <div class="projects__showcase">
+            <a
+              href="https://budgety-app-2wrh6viym-mshahzebraza97.vercel.app/"
+              target="blank"
+            >
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_5.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">Budgety App</figcaption>
+              </figure>
+            </a>
+            <a href="https://pig-game-ruby.vercel.app/" target="blank">
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_6.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">Pig Game</figcaption>
+              </figure>
+            </a>
+            <a href="https://section-09-forkify.vercel.app/" target="blank">
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_7.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">Forkify</figcaption>
+              </figure>
+            </a>
+            <a href="https://radial-navigation.vercel.app/" target="blank">
+              <figure class="projects__figure">
+                <img
+                  class="projects__image"
+                  src="./src/img/projects/project_8.jpg"
+                  alt="HTML Logo"
+                />
+                <figcaption class="projects__label">
+                  Radial Navigation Menu
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section-online-presence"
+        class="section section__online-presence online-presence"
+      >
+        <div class="container">
+          <div class="section__title heading">
+            <h2 class="heading__secondary">Also Check me out here</h2>
+            <h1 class="heading__primary">Online Presence</h1>
+          </div>
+          <ul class="online-presence__list">
+            <li class="online-presence__item">
+              <a
+                href="https://www.linkedin.com/in/mshahzebraza97/"
+                target="blank"
+              >
+                <figure class="online-presence__figure">
+                  <img
+                    class="online-presence__icon"
+                    src="./src/img/online-presence_1.png"
+                    alt="HTML Logo"
+                  />
+                  <figcaption class="online-presence__label">
+                    LinkedIn
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="online-presence__item">
+              <a
+                href="https://www.freecodecamp.org/mshahzebraza97"
+                target="blank"
+              >
+                <figure class="online-presence__figure">
+                  <img
+                    class="online-presence__icon"
+                    src="./src/img/online-presence_2.png"
+                    alt="CSS Logo"
+                  />
+                  <figcaption class="online-presence__label">
+                    FreeCodeCamp
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="online-presence__item">
+              <a href="https://github.com/mshahzebraza97" target="blank">
+                <figure class="online-presence__figure">
+                  <img
+                    class="online-presence__icon"
+                    src="./src/img/online-presence_3.png"
+                    alt="Sass Logo"
+                  />
+                  <figcaption class="online-presence__label">Github</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="online-presence__item">
+              <a
+                href="https://stackoverflow.com/users/11908014/m-shahzeb-raza"
+                target="blank"
+              >
+                <figure class="online-presence__figure">
+                  <img
+                    class="online-presence__icon"
+                    src="./src/img/online-presence_4.png"
+                    alt="JavaScript Logo"
+                  />
+                  <figcaption class="online-presence__label">
+                    Stack Overflow
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section-contact" class="section section__contact contact">
+        <div class="container">
+          <div class="section__title section__title--dark heading">
+            <h2 class="heading__secondary heading__secondary--dark">
+              Also Check me out here
+            </h2>
+            <h1 class="heading__primary heading__primary--dark">
+              Online Presence
+            </h1>
+          </div>
+
+          <div class="contact__container">
+            <div class="contact__graphic">
+              <img
+                src="./src/img/contact_image.jpg"
+                alt="Office Image"
+                class="contact__image"
+              />
             </div>
-        </section>
 
-        <section id="section-skills" class="section section__skills skills">
-            <div class="container ">
-                <div class="section__title heading">
-                    <h2 class="heading__secondary">My Skill Set</h2>
-                    <h1 class="heading__primary">What I Know</h1>
-                </div>
-                <ul class="skills__list ">
-                    <li class="skills__item">
-                        <figure class="skills__figure">
-                            <img class="skills__icon" src="./src/img/icons/HTML.png" alt="HTML Logo">
-                            <figcaption class="skills__label">HTML 5</figcaption>
-                        </figure>
-                    </li>
-                    <li class="skills__item">
-                        <figure class="skills__figure">
-                            <img class="skills__icon" src="./src/img/icons/CSS.png" alt="CSS Logo">
-                            <figcaption class="skills__label">CSS 3</figcaption>
-                        </figure>
-                    </li>
-                    <li class="skills__item">
-                        <figure class="skills__figure">
-                            <img class="skills__icon" src="./src/img/icons/Sass.png" alt="Sass Logo">
-                            <figcaption class="skills__label">Sass</figcaption>
-                        </figure>
-                    </li>
-                    <li class="skills__item">
-                        <figure class="skills__figure">
-                            <img class="skills__icon" src="./src/img/icons/JS.png" alt="JavaScript Logo">
-                            <figcaption class="skills__label">JavaScript</figcaption>
-                        </figure>
-                    </li>
-                    <li class="skills__item">
-                        <figure class="skills__figure">
-                            <img class="skills__icon" src="./src/img/icons/React.png" alt="React Logo">
-                            <figcaption class="skills__label">React</figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <form action="submit" class="contact__form">
+              <div class="contact__form-group">
+                <input
+                  type="text"
+                  id="name"
+                  class="contact__form-field"
+                  minlength="3"
+                  placeholder="Full Name"
+                  required
+                />
+                <label for="name" class="contact__form-label">Full Name</label>
+              </div>
 
-        <section id="section-projects" class="section section__projects projects">
-            <div class="container ">
-                <div class="section__title section__title--dark heading">
-                    <h2 class="heading__secondary heading__secondary--dark">My Skill Set</h2>
-                    <h1 class="heading__primary heading__primary--dark">What I Know</h1>
-                </div>
-                <div class="heading-secondary">
-                    <h2 class="heading__secondary heading__secondary--dark">HTML / CSS</h2>
-                    <!-- <h1 class="heading__primary heading__primary--dark">What I Know</h1> -->
-                </div>
-                <div class="projects__showcase">
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_1.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_2.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_3.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_4.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                </div>
-                <div class="heading-secondary">
-                    <h2 class="heading__secondary heading__secondary--dark">Frontend Development</h2>
-                    <!-- <h1 class="heading__primary heading__primary--dark">What I Know</h1> -->
-                </div>
-                <div class="projects__showcase">
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_5.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_6.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_7.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                    <figure class="projects__figure">
-                        <img class="projects__image" src="./src/img/projects/project_8.jpg" alt="HTML Logo">
-                        <figcaption class="projects__label">Omnifood Restaurant</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
+              <div class="contact__form-group">
+                <input
+                  type="email"
+                  id="email"
+                  class="contact__form-field"
+                  list="Shahzeb@gmail.com, raza@hotmail.com"
+                  placeholder="Email"
+                  required
+                />
+                <label for="email" class="contact__form-label">Email</label>
+              </div>
 
-        <section id="section-online-presence" class="section section__online-presence online-presence">
-            <div class="container ">
-                <div class="section__title heading">
-                    <h2 class="heading__secondary">Also Check me out here</h2>
-                    <h1 class="heading__primary">Online Presence</h1>
-                </div>
-                <ul class="online-presence__list ">
-                    <li class="online-presence__item">
-                        <figure class="online-presence__figure">
-                            <img class="online-presence__icon" src="./src/img/online-presence_1.png" alt="HTML Logo">
-                            <figcaption class="online-presence__label">LinkedIn</figcaption>
-                        </figure>
-                    </li>
-                    <li class="online-presence__item">
-                        <figure class="online-presence__figure">
-                            <img class="online-presence__icon" src="./src/img/online-presence_2.png" alt="CSS Logo">
-                            <figcaption class="online-presence__label">FreeCodeCamp</figcaption>
-                        </figure>
-                    </li>
-                    <li class="online-presence__item">
-                        <figure class="online-presence__figure">
-                            <img class="online-presence__icon" src="./src/img/online-presence_3.png" alt="Sass Logo">
-                            <figcaption class="online-presence__label">Github</figcaption>
-                        </figure>
-                    </li>
-                    <li class="online-presence__item">
-                        <figure class="online-presence__figure">
-                            <img class="online-presence__icon" src="./src/img/online-presence_4.png" alt="JavaScript Logo">
-                            <figcaption class="online-presence__label">Stack Overflow</figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="section-contact" class="section section__contact contact">
-            <div class="container">
+              <div class="contact__form-group">
+                <input
+                  type="tel"
+                  id="contact"
+                  class="contact__form-field"
+                  placeholder="Contact"
+                  title="+92-312-3456789"
+                  required
+                />
+                <label for="contact" class="contact__form-label">Contact</label>
+              </div>
 
-                <div class="section__title section__title--dark heading">
-                    <h2 class="heading__secondary heading__secondary--dark">Also Check me out here</h2>
-                    <h1 class="heading__primary heading__primary--dark">Online Presence</h1>
-                </div>
+              <div class="contact__form-group">
+                <textarea
+                  type="text"
+                  id="message"
+                  class="contact__form-field"
+                  placeholder="Message"
+                ></textarea>
+                <label for="message" class="contact__form-label">Message</label>
+              </div>
 
-                <div class="contact__container">
+              <div class="contact__form-group">
+                <button class="btn btn--dark btn--ghost">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
-                    <div class="contact__graphic">
-                        <img src="./src/img/contact_image.jpg" alt="Office Image" class="contact__image">
-                    </div>
-
-                    <form action="submit" class="contact__form">
-
-                        <div class="contact__form-group">
-                            <input 
-                            type="text" 
-                            id="name" 
-                            class="contact__form-field"
-                            minlength="3" 
-                            placeholder="Full Name" 
-                            required>
-                            <label for="name" class="contact__form-label">Full Name</label>
-                        </div>
-
-                        <div class="contact__form-group">
-                            <input 
-                            type="email" 
-                            id="email" 
-                            class="contact__form-field" 
-                            list="Shahzeb@gmail.com, raza@hotmail.com" 
-                            placeholder="Email" 
-                            required>
-                            <label for="email" class="contact__form-label">Email</label>
-                        </div>
-
-                        <div class="contact__form-group">
-                            <input 
-                            type="tel" 
-                            id="contact" 
-                            class="contact__form-field" 
-                            placeholder="Contact" 
-                            title="+92-312-3456789" 
-                            required>
-                            <label for="contact" class="contact__form-label">Contact</label>
-                        </div>
-                        
-                        <div class="contact__form-group">
-                            <textarea 
-                            type="text" 
-                            id="message" 
-                            class="contact__form-field" 
-                            placeholder="Message"></textarea>
-                            <label for="message" class="contact__form-label">Message</label>
-                        </div>
-
-                        <div class="contact__form-group">
-                            <button class="btn btn--dark btn--ghost">Submit</button>
-                        </div>
-
-                    </form>
-
-                </div>
-                
-            </div>
-        </section>
-
-        <footer id="section-footer" class="section section__footer footer">
-            <div class="container">
-                <h1 class="footer__meta">Concept by <span>M Shahzeb Raza</span></h1>
-                <ul class="footer__nav">
-                    <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link"></a>
-                        <img src="./src/img/icon_codepen.png" alt="" class="footer__nav-img"></li>
-                    <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link"></a>
-                        <img src="./src/img/icon_linkedin.png" alt="" class="footer__nav-img"></li>
-                    <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link"></a>
-                        <img src="./src/img/icon_facebook.png" alt="" class="footer__nav-img"></li>
-                    <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link"></a>
-                        <img src="./src/img/icon_twitter.png" alt="" class="footer__nav-img"></li>
-                    <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link"></a>
-                        <img src="./src/img/icon_dribble.png" alt="" class="footer__nav-img"></li>
-                    <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link"></a>
-                        <img src="./src/img/icon_instagram.png" alt="" class="footer__nav-img"></li>
-                </ul>
-            </div>
-        </footer>
-
-
-        
+      <footer id="section-footer" class="section section__footer footer">
+        <div class="container">
+          <h1 class="footer__meta">Concept by <span>M Shahzeb Raza</span></h1>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a target="blank" href="#" class="footer__nav-link"></a>
+              <img
+                src="./src/img/icon_codepen.png"
+                alt="Codepen"
+                class="footer__nav-img"
+              />
+            </li>
+            <li class="footer__nav-item">
+              <a
+                target="blank"
+                href="https://www.linkedin.com/in/mshahzebraza97/"
+                class="footer__nav-link"
+              ></a>
+              <img
+                src="./src/img/icon_linkedin.png"
+                alt=""
+                class="footer__nav-img"
+              />
+            </li>
+            <li class="footer__nav-item">
+              <a
+                target="blank"
+                href="https://www.facebook.com/mshahzebraza97/"
+                class="footer__nav-link"
+              ></a>
+              <img
+                src="./src/img/icon_facebook.png"
+                alt=""
+                class="footer__nav-img"
+              />
+            </li>
+            <li class="footer__nav-item">
+              <a
+                target="blank"
+                href="https://twitter.com/mshahzebraza97"
+                class="footer__nav-link"
+              ></a>
+              <img
+                src="./src/img/icon_twitter.png"
+                alt=""
+                class="footer__nav-img"
+              />
+            </li>
+            <li class="footer__nav-item">
+              <a target="blank" href="#" class="footer__nav-link"></a>
+              <img
+                src="./src/img/icon_dribble.png"
+                alt=""
+                class="footer__nav-img"
+              />
+            </li>
+            <li class="footer__nav-item">
+              <a target="blank" href="#" class="footer__nav-link"></a>
+              <img
+                src="./src/img/icon_instagram.png"
+                alt=""
+                class="footer__nav-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
